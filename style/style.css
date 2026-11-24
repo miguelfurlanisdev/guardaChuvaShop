@@ -46,7 +46,6 @@ a {
     filter: invert(1);
 }
 
-/* ===== TOPO DA PÁGINA ===== */
 .topo {
     padding: 70px 0 50px;
     text-align: center;
@@ -68,7 +67,6 @@ a {
     font-size: 1.2rem;
 }
 
-/* ===== BOTÕES ===== */
 .botao {
     background-color: orange;
     color: black;
@@ -129,8 +127,8 @@ a {
 
 .prod {
     display: inline-block;
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* gap: 0px; */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 0px;
     max-width: 400px;
     margin: 0 auto;
 }
@@ -253,4 +251,35 @@ a {
     transform: translateY(-10px);
     box-shadow: 0px -50px 70px orange;
 }
+
+.conteudo-dois{
+    background-color: azure;
+    color: #111;
+    flex: 1;
+}
+
+.conteudo titulo{
+    color: black;
+}
+
+.card.produto .card-title {
+    font-size: 28px;
+    gap: 10px;
+}
+
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.card-text {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
 
