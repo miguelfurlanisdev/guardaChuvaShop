@@ -4,81 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guarda-Tudo | Melhores guardas chuvas de sorocaba</title>
+    <meta name="description" content="Guarda-Tudo: guarda-chuvas com funcionalidades absurdas. Os melhores de Sorocaba!">
+    <title>Guarda-Tudo | Guarda-chuvas com funcionalidades absurdas</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
-    <header class="cabecalho">
+    <nav class="navbar navbar-expand-lg menu-topo sticky-top">
         <div class="container">
-            <p class="etiqueta">Você não é de <span class="acucar">Açucar</span></p>
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/logo.svg" alt="Logotipo Guarda-Tudo">Guarda-Tudo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="./index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/vender.html">Promoção</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-            <h1>Guarda-Tudo <span class="shop">Shop</span></h1>
-
-            <p class="subtitulo">Menos você...</p>
-
-            <nav>
-                <a class="menu-link" href="./index.html">Home</a>
-                <a class="menu-link" id="produtos" href="./pages/produtos.html">Produtos</a>
-                <a class="menu-link" id="produtos" href="./pages/vender.html">Compre Agora, se molhe sempre!!</a>
-            </nav>
+    <header class="topo">
+        <div class="container">
+            <p class="chamada">Você não é de <span class="destaque">Açúcar</span></p>
+            <h1>Guarda-Tudo <span class="destaque">Shop</span></h1>
+            <p class="subtitulo">Guarda-chuvas com funcionalidades absurdas. Menos você... se molhando.</p>
+            <a class="btn botao me-2 mb-2" href="./pages/produtos.html">Ver produtos</a>
+            <a class="btn botao-claro mb-2" href="./pages/vender.html">Compre agora, se molhe sempre!!</a>
         </div>
     </header>
 
     <main>
+        <section class="secao secao-preta">
+            <div class="container">
+                <h2 class="titulo">Destaques da loja</h2>
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <article class="card produto">
+                            <img src="./img/p1.svg" class="card-img-top" alt="Painel de Carro Portátil">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Painel de Carro Portátil</h3>
+                                <p class="preco">R$ 499,90</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <article class="card produto">
+                            <img src="./img/p5.svg" class="card-img-top" alt="Guarda-Chuva Foguete">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Guarda-Chuva Foguete</h3>
+                                <p class="preco">R$ 9.999,00</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <article class="card produto">
+                            <img src="./img/p4.svg" class="card-img-top" alt="Guarda-Chuva Forno de Pizza">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Guarda-Chuva Forno de Pizza</h3>
+                                <p class="preco">R$ 294,00</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="secao">
             <div class="container">
-                <h2 class="titulo-secao">A origem</h2>
-                <div class="grade-cards">
-                    <article class="card">
-                        <p>A ideia da loja começou no dia 6 de julho de 1967 quando a fundadora Paula Skof estava
-                            retornando para a sua humilde residência de 3 andares em uma chuva apavorante. <br>
-                            Ela chegou na porta de casa por volta de umas 00:06 e notou que não tinha levado
-                            guarda-chuva, dada as circunstâncias ela ficou desesperada, pois queria retornar para sua
-                            moradia, mas não podia se molhar nem um pouco, pelas roupas, saúde, então ela resolveu
-                            retirar o painel do carro e usá-lo como um protetor contra à chuva</p>
-                    </article>
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <article class="caixa">
+                            <h2 class="h4 text-dark">A origem</h2>
+                            <p>A ideia da loja começou no dia 6 de julho de 1967, quando a fundadora Paula Skof
+                                retornava para a sua humilde residência de 3 andares em uma chuva apavorante.</p>
+                            <p>Ela chegou à porta de casa por volta de 00:06 e notou que não tinha levado
+                                guarda-chuva. Desesperada, pois não podia se molhar nem um pouco, ela resolveu
+                                retirar o painel do carro e usá-lo como proteção contra a chuva.</p>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <article class="caixa">
+                            <h2 class="h4 text-dark">Significado</h2>
+                            <p>Às vezes nem tudo sai como planejamos. Não é possível prever cada chuva, cada
+                                tempestade, mas é possível se precaver...</p>
+                            <p class="destaque">Com um guarda-chuva?</p>
+                            <p>Claro que não! Nossos produtos são muito melhores: partimos do princípio da
+                                aleatoriedade do dia, então são eficientes contra a chuva e contêm múltiplas
+                                funcionalidades.</p>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <article class="caixa">
+                            <h2 class="h4 text-dark">Quem é Paula Skof?</h2>
+                            <cite>Gênia, bilionária, playgirl, filantropa</cite>
+                            <p class="mt-2">Uma mulher revolucionária que nasceu em 1955 em uma família muito pobre,
+                                ao ponto de comer a migalha que o diabo amassou. Assim como o Homem de Ferro, ela
+                                vingou: abriu diversas start-ups e sempre está na busca por mais...</p>
+                            <p><strong>A nova Mulher de Chuva</strong></p>
+                        </article>
+                    </div>
                 </div>
-                <h2 class="titulo-secao">Significado</h2>
-                <div class="grade-cards">
-                    <article class="card">
-                        <p>As vezes nem tudo sai como planejamos, não é possível prever cada acontecimento, cada chuva,
-                            tempestade, mas é possível se precaver... <br>
-                            <span class="pergunta">Com um guarda-chuva?</span> <br>
-                            Claro que não, nossos produtos são muito melhores, partimos do princípio da aleatoridade do
-                            dia, então nossos produtos são eficientes contra à chuva e contém múltiplas funcionalidade
-                        </p>
-                </div>
-                <h2 class="titulo-secao">Quem é Paula Skof?</h2>
-                <div class="grade-cards">
-                    <article class="card">
-                        <cite>Gênia, bilionária, playgirl, filantropa</cite>
-                        <p>Uma mulher revolucionária que nasceu em 1955 em uma família muito pobre, ao ponto de comer a
-                            migalha que o diabo amassou. <br>
-                            E que assim como o Homem de ferro ela vingou, abriu diversas start-ups gerou diversos CNPJ's
-                            e CPF's e sempre está na busca por mais... <br>
-                            <span>A nova Mulher de Chuva</span>
-                        </p>
+            </div>
+        </section>
+
+        <section class="secao pt-0">
+            <div class="container">
+                <div class="promocao">
+                    <h2>☔ Promoção Absurda: Chove, Você Ganha!</h2>
+                    <p>Se chover na hora da compra, <strong>você leva o guarda-chuva de graça</strong>. Se NÃO chover,
+                        a gente joga um balde d'água em você e vale do mesmo jeito.</p>
+                    <span class="cupom">CHOVEU30</span>
+                    <p><a class="btn btn-dark rounded-pill px-4" href="./pages/vender.html">Quero me molhar com
+                            desconto</a></p>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container-footer">
-            <p>&copy; 2026 Guarda-Tudo</p>
 
-            <address class="link-footer">
-                <a href="mailto:guarda-tudo@gmail.com">Email</a>
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2026 Guarda-Tudo. Todos os direitos (e goteiras) reservados.</p>
+            <address>
+                <a href="mailto:guarda-tudo@gmail.com">guarda-tudo@gmail.com</a>
                 <span> | </span>
-                <a href="tel:+5515999999999">Telefone</a>
-                <span> | </span>
+                <a href="tel:+5515999999999">(15) 99999-9999</a>
             </address>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
