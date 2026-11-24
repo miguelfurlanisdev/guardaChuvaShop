@@ -1,156 +1,340 @@
+:root {
+    --laranja: #ff8a00;
+    --laranja-escuro: #e65c00;
+    --preto: #0b0b0b;
+    --cinza: #1a1a1a;
+    --branco: #ffffff;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-
-    background-image: url(../img/Guarda-Tudo_\ Funcionalidades\ Absurdas.png);
+    background-color: var(--preto);
+    background-image: url("../img/Guarda-Tudo_ Funcionalidades Absurdas.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #000000;
-
+    background-attachment: fixed;
+    color: var(--branco);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.6;
 }
 
-h1, h2, h3{
-    color: #123a63;
+h1, h2, h3, h4 {
+    color: var(--branco);
+    font-weight: 800;
 }
 
-h1{
-    font-size: 38px;
+a {
+    color: var(--laranja);
+}
+
+a:hover {
+    color: #ffb347;
+}
+
+/* ---------- Navbar ---------- */
+.navbar-guarda {
+    background-color: rgba(0, 0, 0, 0.92);
+    border-bottom: 3px solid var(--laranja);
+}
+
+.navbar-guarda .navbar-brand {
+    color: var(--branco);
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.navbar-guarda .navbar-brand img {
+    height: 38px;
+    width: auto;
+    margin-right: 8px;
+}
+
+.navbar-guarda .nav-link {
+    color: var(--branco);
+    font-weight: 600;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.navbar-guarda .nav-link:hover,
+.navbar-guarda .nav-link.active {
+    color: var(--laranja);
+    transform: translateY(-2px);
+}
+
+.navbar-guarda .navbar-toggler {
+    border-color: var(--laranja);
+}
+
+.navbar-guarda .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* ---------- Cabeçalho / Hero ---------- */
+.cabecalho {
+    padding: 80px 0 60px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.8));
+}
+
+.cabecalho h1 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
     margin-bottom: 10px;
 }
 
-h2{
-    font-size: 26px;
+.cabecalho .shop,
+.destaque {
+    color: var(--laranja);
 }
 
-h3{
-    font-size: 20px;
-}
-
-a{
-    color: #1d4ed8;
-}
-
-
-
-.container{
-    width: 90%;
-    max-width: 1000px;
-
-    margin: 0 auto;
-}
-
-.cabecalho{
-    background-color: #123a63;
-    color: white;
-
-    padding: 30px 0;
-}
-
-.cabecalho h1{
-    color: rgb(77, 160, 211);
-}
-
-.etiqueta{
-    margin-bottom: 5px;
-
-    color: #6c8eea;
-
+.etiqueta {
+    color: var(--laranja);
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
-.subtitulo{
+.subtitulo {
     max-width: 700px;
+    margin: 0 auto 24px;
+    font-size: 1.2rem;
 }
 
-
-.menu-lista{
-    margin: 20px 0 0;
-    padding: 0;
-
-    list-style: none;
+/* ---------- Botões ---------- */
+.btn-laranja {
+    background-color: var(--laranja);
+    border: 2px solid var(--laranja);
+    color: var(--preto);
+    font-weight: 700;
+    padding: 10px 22px;
+    border-radius: 50px;
+    transition: transform 0.2s, background-color 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
-.menu-lista li{
-    display: inline-block;
-
-    margin-right: 8px;
-    margin-bottom: 8px;
+.btn-laranja:hover {
+    background-color: transparent;
+    color: var(--laranja);
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(255, 138, 0, 0.4);
 }
 
-.menu-link{
-    display: inline-block;
-
-    padding: 8px 12px;
-
-    background-color: #5bb9c4;
-    color: #16385a;
-
-    border: 1px solid rgb(149, 227, 255);
-    border-radius: 5px;
-
-    text-decoration: none;
+.btn-contorno {
+    background: transparent;
+    border: 2px solid var(--branco);
+    color: var(--branco);
+    font-weight: 700;
+    padding: 10px 22px;
+    border-radius: 50px;
+    transition: all 0.2s;
 }
 
-.secao{
-    padding: 72px 0;
-
+.btn-contorno:hover {
+    background-color: var(--branco);
+    color: var(--preto);
 }
 
-.titulo-secao{
+/* ---------- Seções ---------- */
+.secao {
+    padding: 64px 0;
+}
+
+.secao-escura {
+    background-color: rgba(0, 0, 0, 0.78);
+}
+
+.titulo-secao {
     margin-bottom: 32px;
     padding-left: 12px;
-
-    border-left: 5px solid #1d4ed8;
-    border-radius: 5px;
+    border-left: 6px solid var(--laranja);
 }
 
-.grade-cards{
-    display: grid;
-    gap: 26px;
-}
-.card{
-    
+.card-texto {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #111;
     padding: 24px;
-    background-color: #ffffff;
-    border: 1px solid #ffff55;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(214, 233, 52, 0.4);
+    border-radius: 12px;
+    border-bottom: 5px solid var(--laranja);
+    box-shadow: 0 10px 30px rgba(255, 138, 0, 0.25);
+    height: 100%;
 }
 
-.lista-tecnologias{
-    list-style: none;
-    padding: 0;
+.card-texto cite {
+    color: var(--laranja-escuro);
+    font-weight: bold;
+}
+
+.pergunta {
+    color: var(--laranja-escuro);
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
+/* ---------- Cards de produto (Bootstrap) ---------- */
+.card-produto {
+    background-color: var(--cinza);
+    color: var(--branco);
+    border: 1px solid #333;
+    border-radius: 14px;
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.card-produto:hover {
+    transform: translateY(-8px);
+    border-color: var(--laranja);
+    box-shadow: 0 14px 30px rgba(255, 138, 0, 0.35);
+}
+
+.card-produto img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.card-produto:hover img {
+    transform: scale(1.06);
+}
+
+.card-produto .card-title {
+    color: var(--laranja);
+}
+
+.preco {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.preco-antigo {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 0.95rem;
+    margin-right: 6px;
+}
+
+.selo {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: var(--laranja);
+    color: var(--preto);
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+}
+
+/* ---------- Promoção absurda ---------- */
+.promo {
+    background: linear-gradient(135deg, var(--laranja), var(--laranja-escuro));
+    color: var(--preto);
+    border-radius: 18px;
+    padding: 36px 28px;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(255, 138, 0, 0.5);
+}
+
+.promo h2,
+.promo h3,
+.promo p {
+    color: var(--preto);
+}
+
+.promo .cupom {
+    display: inline-block;
+    margin: 8px 0 16px;
+    padding: 8px 22px;
+    border: 3px dashed var(--preto);
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+/* ---------- Carrossel / Accordion ---------- */
+.carousel-item img {
+    max-height: 420px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 10px;
+    padding: 10px 16px;
+}
+
+.accordion-item {
+    background-color: var(--cinza);
+    color: var(--branco);
+    border-color: #333;
+}
+
+.accordion-button {
+    background-color: var(--cinza);
+    color: var(--branco);
+    font-weight: 700;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--laranja);
+    color: var(--preto);
+}
+
+/* ---------- Formulário ---------- */
+.form-contato {
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 1px solid var(--laranja);
+    border-radius: 14px;
+    padding: 28px;
+}
+
+.form-contato label {
+    font-weight: 600;
+}
+
+.form-contato .form-control,
+.form-contato .form-select {
+    background-color: #111;
+    color: var(--branco);
+    border: 1px solid #444;
+}
+
+.form-contato .form-control:focus,
+.form-contato .form-select:focus {
+    border-color: var(--laranja);
+    box-shadow: 0 0 0 0.2rem rgba(255, 138, 0, 0.3);
+}
+
+/* ---------- Rodapé ---------- */
+.rodape {
+    margin-top: 40px;
+    padding: 28px 0;
+    background-color: #000;
+    border-top: 3px solid var(--laranja);
+    text-align: center;
+}
+
+.rodape address {
     margin: 0;
 }
 
-.lista-tecnologias li{
-    padding: 10px 14px;
-    background-color: #5c7107;
-    display: inline-block;
-    border: 1px solid #fdfd3bea;
-    border-radius: 999px;
-}
+/* ---------- Responsividade ---------- */
+@media (max-width: 576px) {
+    .cabecalho {
+        padding: 50px 0 40px;
+    }
 
-.rodape{
-    margin-top: 40px;
-    padding: 25px;
-    background-color: #0d3d6c;
+    .secao {
+        padding: 40px 0;
+    }
 
-    text-align: center;
-}
- 
-.rodape p{
-    color: white;
-}
-.rodape a{
-    color: #3d62f9;
+    .promo .cupom {
+        font-size: 1.2rem;
+    }
 }
